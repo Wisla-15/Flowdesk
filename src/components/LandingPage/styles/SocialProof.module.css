@@ -1,0 +1,31 @@
+.section {
+  padding: 48px 24px;
+  text-align: center;
+}
+.text {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.item {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .list {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}

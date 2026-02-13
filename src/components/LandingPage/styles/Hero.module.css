@@ -1,0 +1,119 @@
+.section {
+  background: var(--color-bg-main);
+  padding: 96px 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.content {
+  max-width: 520px;
+}
+.title {
+  margin-bottom: 16px;
+}
+.description {
+  margin-bottom: 32px;
+  font-size: 18px;
+  color: var(--color-text-secondary);
+}
+.actions {
+  display: flex;
+  gap: 16px;
+}
+
+.visual {
+  display: flex;
+  justify-content: center;
+}
+
+.mockup {
+  width: 100%;
+  max-width: 520px;
+  height: 340px;
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  overflow: hidden;
+}
+
+.sidebar {
+  background: #f8fafc;
+  border-right: 1px solid var(--color-border);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.logo {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text-primary);
+}
+.menu span {
+  display: block;
+  font-size: 13px;
+  padding: 6px 0;
+  color: var(--color-text-muted);
+}
+
+.appContent {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.topbar {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.card {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 13px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+  .content {
+    max-width: none;
+  }
+  .actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .mockup {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .sidebar {
+    display: none;
+  }
+}
