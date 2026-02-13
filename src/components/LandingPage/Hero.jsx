@@ -2,7 +2,6 @@ import styles from './styles/Hero.module.css'
 
 
 const Hero = () => {
-  const navigate = useNavigate()
 
   return (
     <section id="hero" className={styles.section}>
