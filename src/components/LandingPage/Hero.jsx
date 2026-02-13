@@ -14,7 +14,7 @@ const Hero = () => {
 
           <div className={styles.actions}>
             <a href='#finalcta' className="btn-primary">Start free trial</a>
-            <a onClick={()=>navigate("/app/dashboard")} className="btn-secondary">Try how it works</a>
+            <a href='/app/dashboard' className="btn-secondary">Try how it works</a>
           </div>
         </div>
 
