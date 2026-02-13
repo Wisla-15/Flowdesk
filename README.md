@@ -42,6 +42,11 @@ Flowdesk is fully responsive:
 - Drag & drop for tasks
 - Team member assignment
 
+## 👤 Author
+
+Built by Ondřej Wislocki
+Email: ondra.w08@gmail.com
+
 ## 📦 Installation & Run
 
 ```bash
@@ -51,6 +56,3 @@ npm start
 The app will run locally at:
 http://localhost:3000
 
-## 👤 Author
-
-Built by Ondřej Wislocki
