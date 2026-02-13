@@ -1,6 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import styles from './styles/Hero.module.css'
 
+
 const Hero = () => {
+  const navigate = useNavigate()
+
   return (
     <section id="hero" className={styles.section}>
       <div className={styles.container}>
@@ -10,7 +14,7 @@ const Hero = () => {
 
           <div className={styles.actions}>
             <a href='#finalcta' className="btn-primary">Start free trial</a>
-            <a href='#howitworks' className="btn-secondary">See how it works</a>
+            <a onClick={()=>navigate("/app/dashboard")} className="btn-secondary">Try how it works</a>
           </div>
         </div>
 
